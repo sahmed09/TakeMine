@@ -1,0 +1,422 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(8, 7, 5, 0.84); /* Vibrant Orange */
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .logo a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #000000; /* Light orange */
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-image {
+    display: none; /* Hide the image element; we'll use it as a CSS background instead */
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ /* Add your PNG here */
+    background-size: cover; /* Make it fit the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  }
+  
+  .hero-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #050303;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff3b00;
+  }
+  
+  /* Available Resources */
+  .available-resources {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .available-resources h2 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .resource-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .resource-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .resource-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .resource-card h3 {
+    color: rgba(225,152,17,0.84);
+    margin: 15px 0;
+  }
+  
+  .resource-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0 15px 20px;
+  }
+  
+  .resource-card .view-btn {
+    display: block;
+    padding: 10px 15px;
+    background-color:rgba(225,152,17,0.84);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 15px 15px;
+  }
+  
+  .resource-card .view-btn:hover {
+    background-color: #0c0908;
+  }
+  
+  .resource-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Tutors Section */
+  .tutors-for-you {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .tutors-for-you h2 {
+    color: rgba(3, 3, 2, 0.84);
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .tutor-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .tutor-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .tutor-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .tutor-card h3 {
+    color: #0b0909;
+    margin: 15px 0;
+  }
+  
+  .tutor-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0 15px 20px;
+  }
+  
+  .tutor-card .view-btn {
+    display: block;
+    padding: 10px 15px;
+    background-color: rgba(225,152,17,0.84);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 15px 15px;
+  }
+  
+  .tutor-card .view-btn:hover {
+    background-color: rgba(225,152,17,0.84);
+  }
+  
+  .tutor-card:hover {
+    transform: translateY(-10px);
+  }
+  
+
+  .about-us {
+    background-color: rgba(225,152,17,0.84);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .about-us p {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  /* src/styles/Home.css */
+
+.home-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  .hero-section {
+    position: relative;
+    
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-overlay {
+    color: white;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-overlay .cta-button {
+    padding: 10px 20px;
+    background-color: #f57c00;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .hero-overlay .cta-button:hover {
+    background-color: rgba(225,152,17,0.84);
+  }
+  
+
+  .available-resources, .tutors-for-you, .about-us, .testimonials {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .resource-cards, .tutor-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .resource-card, .tutor-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .resource-card img, .tutor-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .view-btn {
+    padding: 8px 16px;
+    background-color:rgba(225,152,17,0.84);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .view-btn:hover {
+    background-color: #1a110d;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    background-color: #f8f8f8;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .testimonial-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+
+
+
+.available-resources {
+    margin: 40px 0;
+  }
+  
+  .resource-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: space-between; 
+  }
+  
+  .resource-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); 
+    margin-bottom: 20px;
+  }
+  
+  .resource-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .resource-card h3 {
+    margin: 15px 0;
+  }
+  
+
+  
+  .view-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Make the resource cards responsive */
+  @media (max-width: 1024px) {
+    .resource-card {
+      width: calc(33.33% - 20px); /* Show 3 cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .resource-card {
+      width: calc(50% - 20px); /* Show 2 cards per row on small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .resource-card {
+      width: 100%; /* Show 1 card per row on extra small screens */
+    }
+  }
+  

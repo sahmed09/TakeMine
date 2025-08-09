@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(to right, #f8f3f3, #fffdfd);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#root {
+  min-height: 100vh;
+  background: inherit;
+}

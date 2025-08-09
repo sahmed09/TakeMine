@@ -1,0 +1,191 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body & Background */
+body {
+    background: #000000; /* Soft light gray background for a professional look */
+    color: #333; /* Dark text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Main Wrapper for Signup */
+.signup-wrapper {
+    width: 100%;
+    max-width: 1200px; /* Wider layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+/* Container for the Form */
+.signup-container {
+    background-color: #fff; /* Clean white background */
+    
+    padding: 40px;
+    width: 100%;
+    max-width: 700px; /* Maintain a clean, readable width */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1); /* Softer shadow for a refined look */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Header Section */
+.signup-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.signup-header h1 {
+    color: #a8561b; /* Deep grayish blue */
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.signup-header p {
+    color: #000000; /* Medium gray for a subtle look */
+    font-size: 1.1rem;
+}
+
+/* Form Grid Layout */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333; /* Standard dark text */
+}
+
+.input-group input,
+.input-group select {
+    padding: 12px;
+    font-size: 1rem;
+    border: none; /* No borders for a cleaner look */
+    border-radius: 8px;
+    background-color: #ecf0f1; /* Light gray background */
+    color: #333;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    background-color: #bdc3c7; /* Slightly darker background on focus */
+}
+
+/* Full Width Input */
+.full-width {
+    grid-column: span 2;
+}
+
+/* Terms and Conditions */
+.terms-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.terms-container input {
+    margin-right: 10px;
+    accent-color: #2c3e50; /* Darker accent for professional feel */
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #000305; /* Deep blue for a professional touch */
+    color: #5b5555;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #a8561b; /* Darker blue on hover */
+    color: #ffffff;
+}
+
+/* Link to Login */
+.login-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-link a {
+    color: #a8561b;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Add subtle shadow animation on container */
+.signup-container:hover {
+    transform: translateY(-10px);
+    opacity: 0.95;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr; /* Stack inputs for smaller screens */
+    }
+
+    .signup-container {
+        padding: 30px;
+    }
+
+    .signup-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .signup-header p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .signup-container {
+        padding: 20px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    .input-group input,
+    .input-group select {
+        font-size: 0.9rem;
+    }
+}

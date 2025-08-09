@@ -1,0 +1,43 @@
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  background: inherit;
+}
+body {
+  background: linear-gradient(to right, #f2f1f1, #fff9f9);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+header, footer {
+  flex-shrink: 0;
+}
+
+
+main {
+  flex-grow: 1;  
+}
+
+
+header {
+  background-color: #ffffff;  
+  color: white;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

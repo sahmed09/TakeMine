@@ -1,0 +1,163 @@
+/* src/styles/Home.css */
+
+.home-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Hero Section Styles */
+  .hero-section {
+    position: relative;
+  
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-overlay {
+    color: white;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-overlay .cta-button {
+    padding: 10px 20px;
+    background-color: #f57c00;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .hero-overlay .cta-button:hover {
+    background-color: #e65100;
+  }
+  
+  /* Available Resources Section */
+  .available-resources, .tutors-for-you, .about-us, .testimonials {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .resource-cards, .tutor-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .resource-card, .tutor-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .resource-card img, .tutor-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .view-btn {
+    padding: 8px 16px;
+    background-color: #f57c00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .view-btn:hover {
+    background-color: #e65100;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    background-color: #f8f8f8;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .testimonial-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  /* Header CSS */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Align items to both sides */
+    align-items: center; /* Center vertically */
+    padding: 10px 20px; /* Add some padding for spacing */
+    background-color: #333; /* Dark background for the header */
+    color: white;
+  }
+  
+  .logo {
+    flex: 1; /* Allows logo to take as much space as needed */
+  }
+  
+  .logo-image {
+    height: 50px; /* Set the height of the logo */
+    width: auto; /* Keep aspect ratio */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between navigation items */
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a,
+  nav ul li button {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover,
+  nav ul li button:hover {
+    background-color: #444; /* Darken the background on hover */
+  }
+  
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #444; /* Same hover effect for the button */
+  }
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+  

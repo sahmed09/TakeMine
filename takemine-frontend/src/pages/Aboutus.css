@@ -1,0 +1,186 @@
+/* General About Us Styling */
+.about-us-page {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: rgba(225,152,17,0.84);
+    color: white;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-description {
+    font-size: 1.25rem;
+    max-width: 600px;
+  }
+  
+  .hero-image img {
+    max-width: 50%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Our Mission Section */
+  .mission-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .mission-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+  }
+  
+  .mission-section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Core Values Section */
+  .values-section {
+    padding: 60px 20px;
+    background-color: #f1f1f1;
+  }
+  
+  .values-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+  }
+  
+  .values-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .value-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+  }
+  
+  .value-card h3 {
+    font-size: 1.8rem;
+    color: rgba(225,152,17,0.84);
+  }
+  
+  .value-card p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Team Section */
+  .team-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .team-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgba(225,152,17,0.84);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-member h3 {
+    font-size: 1.25rem;
+    color: #2c3e50;
+    margin-top: 10px;
+  }
+  
+  .team-member p {
+    color: #555;
+  }
+  
+  /* History Section */
+  .history-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .history-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .history-section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Call to Action */
+  .cta-section {
+    padding: 60px 20px;
+    background-color: rgba(225,152,17,0.84);
+    color: white;
+    text-align: center;
+  }
+  
+  .cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-section p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: white;
+    color: rgba(225,152,17,0.84);
+    padding: 12px 30px;
+    font-size: 1.25rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: rgba(225,152,17,0.84);
+  }
+  

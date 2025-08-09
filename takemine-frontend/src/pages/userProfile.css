@@ -1,0 +1,17 @@
+div{
+    margin: 20px;
+}
+.roars{
+    color: orange;
+
+}
+
+
+
+.resource-table{
+    
+    
+    display:inline-flex;
+    flex-wrap: wrap;
+    
+}
